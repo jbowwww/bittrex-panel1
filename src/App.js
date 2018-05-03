@@ -49,11 +49,10 @@ class App extends Component {
 		}
     	return (
 		<div>
-        <Navbar color="light" light expand="md">
-			<NavbarToggler onClick={e=>this.setState({ isNavOpen: !this.state.isNavOpen })} />
-          <NavbarBrand href="/">Trex</NavbarBrand>
-          <Collapse isOpen={this.state.isNavOpen} navbar>
-            <Nav className="ml-auto" navbar>
+	<Navbar color="light" light>
+	<NavbarToggler onClick={e=>this.setState({ isNavOpen: !this.state.isNavOpen })} className="float-right" />
+		  <Collapse isOpen={this.state.isNavOpen} navbar className="float-right">
+            <Nav className="ml-auto">
               <NavItem>
                 <NavLink href="/components/">Components</NavLink>
               </NavItem>

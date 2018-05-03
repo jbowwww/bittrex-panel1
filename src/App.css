@@ -25,3 +25,31 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.float-left {
+	display: inline-block;
+	float: left;
+}
+.float-right {
+	float: right;
+}
+
+.navbar {
+	display: block;
+	padding: 3px 5px;
+}
+.navbar-light .navbar-toggler {
+	border-color: rgba(20,20,20,0.1) !important;
+	padding: 2px;
+}
+.navbar-light .navbar-toggler:focus {
+	border-color: rgba(0,0,0,0.3) !important;
+	outline: inherit;
+}
+.navbar-light .navbar-toggler:hover {
+	border-color: rgba(127, 150, 10, 1) !important;
+}
+
+Navbar Collapse {
+	text-align: right;
+}
